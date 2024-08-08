@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.B's AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>Mr.B's AI Assistant </h1>
+    </header>
+    <main>
+        <div class="hero-section">
+            <h2>Welcome to Mr.B's AI Assistant</h2>
+            <h3>Powered By Google's Gemini AI</h3>
+            <p>Let me help you with your creative tasks or answer your questions in an informative way.</p>
+        </div>
+        <div class="chat-container">
+            <div class="chat-box" id="chat-box">
+                <div class="chat-message bot-message">
+                    <span class="message-content">Welcome! How can I help you today?</span>
+                </div>
+            </div>
+            <form id="message-form" class="message-form">
+                <input type="text" id="user-input" placeholder="Type your message...">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
